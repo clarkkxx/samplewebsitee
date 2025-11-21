@@ -1,0 +1,389 @@
+
+
+body {
+	background-image: linear-gradient(to LEFT, rgb(49, 53, 52) , rgb(222, 228, 226));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+/* Logo Styles */
+.logo {
+    background: url('logo.jpeg') no-repeat; 
+    width: 100px; 
+    height: 130px;
+    background-size: contain;
+    user-select: none;
+}
+*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+form {
+	width: 500px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+	position: relative;
+	bottom: -10rem;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
+}
+
+button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+button:hover{
+	opacity: .7;
+}
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.ca {
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #444;
+}
+.ca:hover {
+	text-decoration: underline;
+} 
+#main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+#main-header.header-hidden {
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+}
+
+/* Logo Styles */
+.logo {
+    background: url('logo.jpeg') no-repeat; 
+    width: 100px; 
+    height: 130px;
+    background-size: contain;
+    user-select: none;
+}
+
+/* Navigation Styles */
+.navigation a {
+    position: relative;
+    font-size: 1.5em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 100;
+    margin-left: 5vh /* Adjusted margin for responsiveness */
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    bottom: -6px;
+    width: 150px;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    margin-right: 15px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navigation a:hover {
+    background: #506882;
+    color: #C5FFFA;
+}
+
+/* Login Button Styles */
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #020101;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #000;
+    margin-left: 2rem;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #506882;
+    color: #C5FFFA;
+}
+
+.table-scroll {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+table {
+    width: 50%;
+}
+.container{
+    width: 200vh;
+    position: absolute;
+    top: 15em;
+}
+.card-body{
+    max-height: 400px;
+    width: auto;
+    overflow-y: auto;
+}
+.addacc{
+    margin-top: inherit;
+    position: relative;
+    width: 50rem;
+    bottom: auto;
+}
+.changepass{
+    margin-top: inherit;
+    position: relative;
+    width: 50rem;
+    bottom: auto;
+    left: 10em;
+}
+.addacc #container{
+    height: 40rem;
+    width: 50rem;
+}
+.changepass  #container{
+    .addacc {
+    margin-top: inherit;
+    position: relative;
+    width: 50rem;
+    bottom: auto;
+};
+.addacc {
+    margin-top: inherit;
+    position: relative;
+    width: 50rem;
+    bottom: auto;
+};
+
+}
+.containeru {
+    width: 80%; /* Adjust the width as needed */
+    height: 80%; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative;
+    top: 10rem;
+}
+
+.containeru input {
+    width: 120%; /* Make the input fields fill the container width */
+    padding: 0.5rem; /* Add padding for better spacing */
+    margin-bottom: 1rem; /* Add margin to separate input fields */
+}
+
+.containeru h2 {
+    margin-top: 2rem; /* Add margin to the top of the heading */
+    text-align: center;
+    font-size: 2em;
+    
+}
+.containeru form{
+    width: 50em;
+	border: 2px solid #1a0000;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+	position: relative;
+	top: 2rem;
+    left: 24rem;
+}
+.search{
+    bottom: 10em;
+    left: 18em;
+    position: relative;
+}
+.search form{
+    width: 40em;
+    border: 20em;
+    padding: 30px;
+    background: transparent;
+    border-radius: 15px;
+    position: relative;
+    bottom: -10rem;
+    right: 13em;
+    height: 10em;
+}
+.search a{
+    font-family: times;
+    position: absolute;
+    top: 5em;
+    right: -9em;
+    height: 3em;
+}
+.approve{
+    width: 20em;
+    border: none;
+    padding: 30px;
+    background: none;
+    border-radius: 15px;
+    position: relative;
+    bottom: -10rem;
+    height: 0em;
+    right: -1em;
+    bottom: 2em;
+}
+.class-body form {
+    width: 40%; /* Adding percentage unit */
+    border: 2px solid black; /* Adding border style and color */
+    padding: 30px;
+    background: #f7f7f7;
+    border-radius: 15px;
+    position: relative;
+    bottom: -10rem;
+    right: 13em;
+    height: 10em;
+    position: relative;
+}
+.print{
+    position: relative;
+    float: right;
+    left: 22px;
+    font-size: 3em;
+}
+.filter form{
+    width: 200px;
+    border: none;
+    padding: 30px;
+    border-radius: 15px;
+    top: auto;
+    position: absolute;
+    left: 50%;
+    background: transparent;
+    bottom: -8em;
+}
+.filter input{
+    display: block;
+    border: 2px solid #ccc;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px
+}
+.filter{
+    top: 7rem;
+    position: absolute;
+    left: 55rem;
+}
+.filter select{
+    width:  96% !important;
+    text-align: center;
+}
+.filter p{
+    position: relative;
+    font-size: 1em;
+    font-weight:  bold;
+    right: -3em;
+}
+
+.filtera form{
+    width: 200px;
+    border: none;
+    padding: 30px;
+    border-radius: 15px;
+    top: auto;
+    position: absolute;
+    right: -65%;
+    background: transparent;
+    bottom: -8em;
+}
+.filtera input{
+    bottom: 6em;
+    display: block;
+    border: 2px solid #000;
+    width: 36%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    left: 17em;
+    position: absolute;
+    font-size: 0.8rem;
+}
+.filtera{
+    top: -1em;
+    position: absolute;
+    left: 55rem;
+}
+.filtera select{
+    width: 70% !important;
+    text-align: center;
+    top: -3.6em;
+    position: absolute;
+}
+.filtera p{
+    position: relative;
+    font-size: 1em;
+    font-weight:  bold;
+    right: 9rem;
+    top: 2.5em;
+}
